@@ -1,0 +1,98 @@
+4 Bison
+5 Blowfish
+7 Summoned: Copy attack and health from most healthy friend
+8 Drink: Gain +1/+1
+10 Start of turn: Transform into another animal from the current tier
+11 Dodo
+13 Cow
+14 Ox
+15 Cricket
+16 Start of battle: Deal 3 damage to a random enemy
+17 Deer
+20 Dolphin
+22 Fly
+23 Dragon
+24 End turn: Gain +1/+1 per friend with 5 or less health
+25 Mammoth
+27 Fish
+29 Giraffe
+32 Hedgehog
+33 Hippo
+34 Horse
+35 Kangaroo
+36 Crocodile
+38 Shark
+39 Flamingo
+40 Monkey
+41 Duck
+42 Octopus
+43 Beaver
+44 Leopard
+45 Parrot
+46 Peacock
+47 Rhino
+48 Start of battle abilities triggers[sic] twice
+49 Rat
+50 Pig
+51 Snake
+52 Rooster
+53 Start of battle: knock-out adjacent animals
+54 Eat shop food give adjacent animals +1/+1
+55 Mosquito
+56 Friend sold give a friend health
+57 Badger
+59 Friend faints: give 2 random friends +1/+1
+60 Friend faints: summon 1 tier 3 animal as a 2/2
+61 Squirrel
+62 Swan
+63 Eat meat: gain +1/+1
+64 Animal summoned: if it is tier 1, eat it and gain +1/+1
+65 Turkey
+66 Turtle
+67 Whale
+68 Friend summoned: if it has a Faint ability, gain +2/+2
+69 Elephant
+71 Snail
+72 Rabbit
+73 Otter
+74 Dog
+75 Ant
+76 Has no special ability. Is kind of lame combat-wise. But he truly believes in you!
+77 Crab
+78 Penguin
+79 For every sold friend this turn, give the frontmost friend +2/+2
+80 reudce 33% health
+81 hurt give friend behind stats
+82 Friend sold gain +1 health
+83 End of turn abilities triggers[sic] twice
+84 Cat
+85 Tiger
+86 Sheep
+87 Worm
+88 Gorilla
+89 Food with health and attack effects are doubled
+90 Friend summoned: give +1/+1 temporarily
+91 Friend bought gain +1/+1
+92 Friend bought: gain 1 gold. Works 3 times per turn.
+93 Sell: give a random friend +1/+1
+94 Sell: give a random friend +2/+2
+96 Buy food: gain +1/+1 until the end of battle
+97 Buy food: gain 1 gold. Works 3 times per turn.
+98 Friend sold: give friend in front +1/+1
+99 Lobster
+100 Buy tier 1 animal: give current and future shop animals +1/+1
+101 Tropical fish
+102 Puppy
+103 T-rex
+104 Llama
+105 Microbe
+106 Worm
+107 Bat
+108 Eats shop food: give friends +1/+1 until end of battle
+109 Hatching chick
+110 Summon 1 level 1 tier 6 animal
+111 Sparrow
+112 Beetle
+113 Poodle
+114 Friend ahead attacks: deal it 1 damage
+115 Dromedary

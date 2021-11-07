@@ -1,0 +1,622 @@
+{
+  "Id": "ce415e24-3d24-4077-a6f4-c81a8c0e59d1",
+  "Seed": 1172099478,
+  "Outcome": 2,
+  "ResolvedOn": "2021-10-21T20:19:41.0765504+00:00",
+  "WatchedOn": "2021-10-21T20:19:59.1966614+00:00",
+  "User": {
+    "Id": "17dcc9dc-62a3-419e-b8a4-c78748345ac3",
+    "DisplayName": "Player 1"
+  },
+  "UserBoard": {
+    "Id": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+    "UniqueNumberCounter": 8,
+    "State": 4,
+    "Captain": 0,
+    "LivesMax": 4,
+    "Losses": 0,
+    "Victories": 0,
+    "VictoriesMax": 10,
+    "Turn": 1,
+    "Gold": 0,
+    "Tier": 1,
+    "BoardCapacity": 99,
+    "Minions": {
+      "Size": {
+        "x": 5,
+        "y": 1
+      },
+      "Items": [
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 0,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 1,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 2,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 3,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 37,
+          "Abilities": [
+            {
+              "Enum": 32,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 4,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        }
+      ]
+    },
+    "MinionShopCapacity": 3,
+    "MinionShopAttackBonus": 0,
+    "MinionShopHealthBonus": 0,
+    "MinionShop": [
+      {
+        "Owner": 1,
+        "Enum": 17,
+        "Location": 0,
+        "Point": {
+          "x": 0,
+          "y": 0
+        },
+        "Exp": 0,
+        "Level": 1,
+        "Damage": 0,
+        "Health": {
+          "Permanent": 2,
+          "Temporary": 0
+        },
+        "Attack": {
+          "Permanent": 1,
+          "Temporary": 0
+        },
+        "Perk": null,
+        "Abilities": [
+          {
+            "Enum": 15,
+            "Level": 1,
+            "Native": true,
+            "Duration": 0,
+            "TriggerCount": 0
+          }
+        ],
+        "Cosmetic": 0,
+        "Id": {
+          "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+          "Unique": 7
+        },
+        "Price": 3,
+        "Frozen": false
+      }
+    ],
+    "SpellShopCapacity": 1,
+    "SpellShop": [],
+    "Adjective": "Glass",
+    "Noun": "Cannon",
+    "PreviousOutcome": 0,
+    "MinionGraveyard": [],
+    "MinionsPlayed": 0,
+    "MinionSold": [],
+    "SpellPlayed": [],
+    "Cosmetic": 0,
+    "Background": 0,
+    "Pack": 1
+  },
+  "Opponent": {
+    "Id": "a40123a4-0d4f-46ad-9578-04297999b43c",
+    "DisplayName": "Player 2"
+  },
+  "OpponentBoard": {
+    "Id": "b06529c9-e533-4af2-b6e5-8f67de440177",
+    "UniqueNumberCounter": 8,
+    "State": 4,
+    "Captain": 0,
+    "LivesMax": 4,
+    "Losses": 0,
+    "Victories": 0,
+    "VictoriesMax": 10,
+    "Turn": 1,
+    "Gold": 0,
+    "Tier": 1,
+    "BoardCapacity": 99,
+    "Minions": {
+      "Size": {
+        "x": 5,
+        "y": 1
+      },
+      "Items": [
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 0,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 1,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 2,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 7,
+          "Abilities": [
+            {
+              "Enum": 5,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 3,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        },
+        {
+          "Owner": 1,
+          "Enum": 37,
+          "Abilities": [
+            {
+              "Enum": 32,
+              "Level": 1,
+              "Native": true,
+              "Duration": 0,
+              "TriggerCount": 0
+            }
+          ],
+          "Location": 1,
+          "Point": {
+            "x": 4,
+            "y": 0
+          },
+          "Exp": 0,
+          "Level": 3,
+          "Damage": 0,
+          "Health": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Attack": {
+            "Permanent": 50,
+            "Temporary": 0
+          },
+          "Perk": null,
+          "Cosmetic": 0,
+          "Id": {
+            "BoardId": "f3e6c849-796f-4bbd-966e-6bac4c093282",
+            "Unique": 5
+          },
+          "Price": 3,
+          "Frozen": false
+        }
+      ]
+    },
+    "MinionShopCapacity": 3,
+    "MinionShopAttackBonus": 0,
+    "MinionShopHealthBonus": 0,
+    "MinionShop": [
+      {
+        "Owner": 1,
+        "Enum": 0,
+        "Location": 0,
+        "Point": {
+          "x": 0,
+          "y": 0
+        },
+        "Exp": 0,
+        "Level": 1,
+        "Damage": 0,
+        "Health": {
+          "Permanent": 1,
+          "Temporary": 0
+        },
+        "Attack": {
+          "Permanent": 2,
+          "Temporary": 0
+        },
+        "Perk": null,
+        "Abilities": [
+          {
+            "Enum": 75,
+            "Level": 1,
+            "Native": true,
+            "Duration": 0,
+            "TriggerCount": 0
+          }
+        ],
+        "Cosmetic": 0,
+        "Id": {
+          "BoardId": "b06529c9-e533-4af2-b6e5-8f67de440177",
+          "Unique": 5
+        },
+        "Price": 3,
+        "Frozen": true
+      },
+      {
+        "Owner": 1,
+        "Enum": 32,
+        "Location": 0,
+        "Point": {
+          "x": 0,
+          "y": 0
+        },
+        "Exp": 0,
+        "Level": 1,
+        "Damage": 0,
+        "Health": {
+          "Permanent": 3,
+          "Temporary": 0
+        },
+        "Attack": {
+          "Permanent": 2,
+          "Temporary": 0
+        },
+        "Perk": null,
+        "Abilities": [
+          {
+            "Enum": 27,
+            "Level": 1,
+            "Native": true,
+            "Duration": 0,
+            "TriggerCount": 0
+          }
+        ],
+        "Cosmetic": 0,
+        "Id": {
+          "BoardId": "b06529c9-e533-4af2-b6e5-8f67de440177",
+          "Unique": 6
+        },
+        "Price": 3,
+        "Frozen": false
+      },
+      {
+        "Owner": 1,
+        "Enum": 92,
+        "Location": 0,
+        "Point": {
+          "x": 0,
+          "y": 0
+        },
+        "Exp": 0,
+        "Level": 1,
+        "Damage": 0,
+        "Health": {
+          "Permanent": 3,
+          "Temporary": 0
+        },
+        "Attack": {
+          "Permanent": 1,
+          "Temporary": 0
+        },
+        "Perk": null,
+        "Abilities": [
+          {
+            "Enum": 96,
+            "Level": 1,
+            "Native": true,
+            "Duration": 0,
+            "TriggerCount": 0
+          }
+        ],
+        "Cosmetic": 0,
+        "Id": {
+          "BoardId": "b06529c9-e533-4af2-b6e5-8f67de440177",
+          "Unique": 7
+        },
+        "Price": 3,
+        "Frozen": false
+      }
+    ],
+    "SpellShopCapacity": 1,
+    "SpellShop": [
+      {
+        "Enum": 40,
+        "Id": {
+          "BoardId": "b06529c9-e533-4af2-b6e5-8f67de440177",
+          "Unique": 8
+        },
+        "Price": 3,
+        "Frozen": false
+      }
+    ],
+    "Adjective": "Target",
+    "Noun": "Practice",
+    "PreviousOutcome": 0,
+    "MinionGraveyard": [],
+    "MinionsPlayed": 0,
+    "MinionSold": [],
+    "SpellPlayed": [],
+    "Cosmetic": 0,
+    "Background": 0,
+    "Pack": 1
+  },
+  "EndResult": 1889433058
+}
