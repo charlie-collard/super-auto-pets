@@ -65,8 +65,8 @@ for i, (animal, perk, level, attack, health) in enumerate(team_2):
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Abilities"][0]["Level"] = level
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Level"] = level
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Perk"] = perk_id(perk)
-        data["OpponentBoard"]["Minions"]["Items"][i]["Attack"]["Permanent"] = attack
-        data["OpponentBoard"]["Minions"]["Items"][i]["Health"]["Permanent"] = health
+        data["OpponentBoard"]["Minions"]["Items"][4-i]["Attack"]["Permanent"] = attack
+        data["OpponentBoard"]["Minions"]["Items"][4-i]["Health"]["Permanent"] = health
     else:
         data["OpponentBoard"]["Minions"]["Items"][4-i] = None
 
