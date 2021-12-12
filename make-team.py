@@ -38,28 +38,23 @@ def transform_ability(ability_id, level):
         "TriggerCount": 1
     }
 
-for i, (animal, perk, level, attack, health) in enumerate(team_1):
-    if animal_id := animals.get(animal):
-        data["UserBoard"]["Minions"]["Items"][i]["Enum"] = animal_id
-        data["UserBoard"]["Minions"]["Items"][i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
-        data["UserBoard"]["Minions"]["Items"][i]["Level"] = level
-        data["UserBoard"]["Minions"]["Items"][i]["Perk"] = perks.get(perk)
-        data["UserBoard"]["Minions"]["Items"][i]["Attack"]["Permanent"] = attack
-        data["UserBoard"]["Minions"]["Items"][i]["Health"]["Permanent"] = health
-    else:
-        data["UserBoard"]["Minions"]["Items"][i] = None
+
+def edit_board(team, board_name, index_function):
+    global data
+    for i, (animal, perk, level, attack, health) in enumerate(team):
+        index = index_function(i)
+        if animal_id := animals.get(animal):
+            data[board_name]["Minions"]["Items"][index]["Enum"] = animal_id
+            data[board_name]["Minions"]["Items"][index]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
+            data[board_name]["Minions"]["Items"][index]["Level"] = level
+            data[board_name]["Minions"]["Items"][index]["Perk"] = perks.get(perk)
+            data[board_name]["Minions"]["Items"][index]["Attack"]["Permanent"] = attack
+            data[board_name]["Minions"]["Items"][index]["Health"]["Permanent"] = health
+        else:
+            data[board_name]["Minions"]["Items"][index] = None
 
 
-for i, (animal, perk, level, attack, health) in enumerate(team_2):
-    if animal_id := animals.get(animal):
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Enum"] = animal_id
-        data["OpponentBoard"]["Minions"]["Items"][i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Level"] = level
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Perk"] = perks.get(perk)
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Attack"]["Permanent"] = attack
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Health"]["Permanent"] = health
-    else:
-        data["OpponentBoard"]["Minions"]["Items"][4-i] = None
-
+edit_board(team_1, "UserBoard", lambda i: i)
+edit_board(team_2, "OpponentBoard", lambda i: 4-i)
 with open("generated-battle.json", "w") as f:
     json.dump(data, f, indent=2)
