@@ -15,7 +15,7 @@ A tool to allow for viewing of arbitrary Super Auto Pets replays
 3. Run `python3 make-team.py`
 4. Start the proxy with `./start-proxy.sh`
 5. Configure your browser to use the proxy
-  * Chrome: chrome://settings/?search=proxy
-  * [Firefox](https://support.mozilla.org/en-US/kb/connection-settings-firefox)
+    * Chrome: chrome://settings/?search=proxy
+    * [Firefox](https://support.mozilla.org/en-US/kb/connection-settings-firefox)
 6. Press the replay button in-game. It should play out the replay.
 7. Update `make-team.py` and run it again - everything should update automatically (no need to restart the proxy).
