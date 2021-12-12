@@ -2,19 +2,19 @@ import json
 import re
 
 team_1 = [
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
+    ("boar", "melon", 3, 50, 50),
+    ("boar", "melon", 3, 50, 50),
+    ("boar", "melon", 3, 50, 50),
+    ("boar", "melon", 3, 50, 50),
+    ("snail", "mushroom", 3, 50, 50),
 ]
 
 team_2 = [
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
-    ("whale", "melon", 3, 50, 50),
+    ("turkey", "melon", 3, 50, 50),
+    ("turkey", "melon", 3, 50, 50),
+    ("turkey", "melon", 3, 50, 50),
+    ("turkey", "melon", 3, 50, 50),
+    ("turkey", "melon", 3, 50, 50),
 ]
 
 with open("data/battle.json") as f:
@@ -53,7 +53,7 @@ for i, (animal, perk, level, attack, health) in enumerate(team_1):
 for i, (animal, perk, level, attack, health) in enumerate(team_2):
     if animal_id := animals.get(animal):
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Enum"] = animal_id
-        data["OpponentBoard"]["Minions"]["Items"][4-i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in abilities[animal]]
+        data["OpponentBoard"]["Minions"]["Items"][i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Level"] = level
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Perk"] = perks.get(perk)
         data["OpponentBoard"]["Minions"]["Items"][4-i]["Attack"]["Permanent"] = attack
