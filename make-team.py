@@ -41,7 +41,7 @@ def transform_ability(ability_id, level):
 for i, (animal, perk, level, attack, health) in enumerate(team_1):
     if animal_id := animals.get(animal):
         data["UserBoard"]["Minions"]["Items"][i]["Enum"] = animal_id
-        data["UserBoard"]["Minions"]["Items"][i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in abilities[animal]]
+        data["UserBoard"]["Minions"]["Items"][i]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
         data["UserBoard"]["Minions"]["Items"][i]["Level"] = level
         data["UserBoard"]["Minions"]["Items"][i]["Perk"] = perks.get(perk)
         data["UserBoard"]["Minions"]["Items"][i]["Attack"]["Permanent"] = attack
