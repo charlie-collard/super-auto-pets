@@ -2,19 +2,19 @@ import json
 import re
 
 team_1 = [
-    ("boar", "melon", 3, 50, 50),
-    ("boar", "melon", 3, 50, 50),
-    ("boar", "melon", 3, 50, 50),
-    ("boar", "melon", 3, 50, 50),
-    ("snail", "mushroom", 3, 50, 50),
+    ("fish", "lucky", 3, 1, 50),
+    ("fish", "lucky", 3, 1, 50),
+    ("fish", "lucky", 3, 1, 50),
+    ("fish", "lucky", 3, 1, 50),
+    ("fish", "lucky", 3, 1, 50),
 ]
 
 team_2 = [
-    ("turkey", "melon", 3, 50, 50),
-    ("turkey", "melon", 3, 50, 50),
-    ("turkey", "melon", 3, 50, 50),
-    ("turkey", "melon", 3, 50, 50),
-    ("turkey", "melon", 3, 50, 50),
+    ("worm", "lucky", 3, 1, 50),
+    ("worm", "lucky", 3, 1, 50),
+    ("worm", "lucky", 3, 1, 50),
+    ("worm", "lucky", 3, 1, 50),
+    ("worm", "lucky", 3, 1, 50),
 ]
 
 with open("data/battle.json") as f:
