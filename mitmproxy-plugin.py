@@ -2,7 +2,7 @@ import re
 import json
 from mitmproxy import http
 
-battle_filename = 'generated-battle.json' # name of the file you generated with make_team.py
+battle_filename = "generated-battle.json"
 
 def request(flow: http.HTTPFlow) -> None:
     if not (flow.request.method == "GET"):
