@@ -51,7 +51,8 @@ def edit_board(team, board_name, board_background, index_function):
     global data
     for i, (animal, perk, level, attack, health, hat) in enumerate(team):
         index = index_function(i)
-        if animal_id := animals.get(animal):
+        animal_id = animals.get(animal)
+        if animal_id != None:
             data[board_name]["Minions"]["Items"][index]["Enum"] = animal_id
             data[board_name]["Minions"]["Items"][index]["Abilities"] = [transform_ability(ability_id, level) for ability_id in (abilities.get(animal) or [])]
             data[board_name]["Minions"]["Items"][index]["Level"] = level
