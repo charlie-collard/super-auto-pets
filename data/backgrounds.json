@@ -1,0 +1,9 @@
+{
+  "grass field": 0,
+  "underground cave": 1,
+  "hot desert": 2,
+  "lava cave": 3,
+  "snowy mountain": 4,
+  "lava mountain": 5,
+  "scary forest": 6
+}
