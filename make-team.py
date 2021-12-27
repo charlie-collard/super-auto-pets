@@ -3,19 +3,19 @@ import json
 import re
 
 team_1 = [
-    ("fish", "lucky", 3, 10, 50),
-    ("fish", "lucky", 3, 10, 50),
-    ("fish", "lucky", 3, 10, 50),
-    ("fish", "lucky", 3, 10, 50),
-    ("fish", "lucky", 3, 10, 50),
+    ("fish", "lucky", 3, 10, 50, "abandon"),
+    ("fish", "lucky", 3, 10, 50, "abandon"),
+    ("fish", "lucky", 3, 10, 50, "abandon"),
+    ("fish", "lucky", 3, 10, 50, "abandon"),
+    ("fish", "lucky", 3, 10, 50, "abandon"),
 ]
 
 team_2 = [
-    ("worm", "lucky", 3, 10, 50),
-    ("worm", "lucky", 3, 10, 50),
-    ("worm", "lucky", 3, 10, 50),
-    ("worm", "lucky", 3, 10, 50),
-    ("worm", "lucky", 3, 10, 50),
+    ("worm", "lucky", 3, 10, 50, "trophy"),
+    ("worm", "lucky", 3, 10, 50, "trophy"),
+    ("worm", "lucky", 3, 10, 50, "trophy"),
+    ("worm", "lucky", 3, 10, 50, "trophy"),
+    ("worm", "lucky", 3, 10, 50, "trophy"),
 ]
 
 with open("data/battle.json") as f:
@@ -26,6 +26,9 @@ with open("data/animals.json") as f:
 
 with open("data/abilities.json") as f:
     abilities = json.load(f)
+
+with open("data/hats.json") as f:
+    hats = json.load(f)
 
 with open("data/perks.json") as f:
     perks = json.load(f)
@@ -42,7 +45,7 @@ def transform_ability(ability_id, level):
 
 def edit_board(team, board_name, index_function):
     global data
-    for i, (animal, perk, level, attack, health) in enumerate(team):
+    for i, (animal, perk, level, attack, health, hat) in enumerate(team):
         index = index_function(i)
         if animal_id := animals.get(animal):
             data[board_name]["Minions"]["Items"][index]["Enum"] = animal_id
@@ -51,6 +54,7 @@ def edit_board(team, board_name, index_function):
             data[board_name]["Minions"]["Items"][index]["Perk"] = perks.get(perk)
             data[board_name]["Minions"]["Items"][index]["Attack"]["Permanent"] = attack
             data[board_name]["Minions"]["Items"][index]["Health"]["Permanent"] = health
+            data[board_name]["Minions"]["Items"][index]["Cosmetic"] = hats.get(hat)
         else:
             data[board_name]["Minions"]["Items"][index] = None
 
