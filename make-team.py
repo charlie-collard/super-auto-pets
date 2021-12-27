@@ -2,6 +2,8 @@
 import json
 import re
 
+background = "grass field"
+
 team_1 = [
     ("fish", "lucky", 3, 10, 50, "abandon"),
     ("fish", "lucky", 3, 10, 50, "abandon"),
@@ -18,14 +20,17 @@ team_2 = [
     ("worm", "lucky", 3, 10, 50, "trophy"),
 ]
 
-with open("data/battle.json") as f:
-    data = json.load(f)
+with open("data/abilities.json") as f:
+    abilities = json.load(f)
 
 with open("data/animals.json") as f:
     animals = json.load(f)
 
-with open("data/abilities.json") as f:
-    abilities = json.load(f)
+with open("data/backgrounds.json") as f:
+    backgrounds = json.load(f)
+
+with open("data/battle.json") as f:
+    data = json.load(f)
 
 with open("data/hats.json") as f:
     hats = json.load(f)
@@ -42,8 +47,7 @@ def transform_ability(ability_id, level):
         "TriggerCount": 1
     }
 
-
-def edit_board(team, board_name, index_function):
+def edit_board(team, board_name, board_background, index_function):
     global data
     for i, (animal, perk, level, attack, health, hat) in enumerate(team):
         index = index_function(i)
@@ -58,8 +62,10 @@ def edit_board(team, board_name, index_function):
         else:
             data[board_name]["Minions"]["Items"][index] = None
 
+    data[board_name]["Background"] = backgrounds.get(board_background)
 
-edit_board(team_1, "UserBoard", lambda i: i)
-edit_board(team_2, "OpponentBoard", lambda i: 4-i)
+
+edit_board(team_1, "UserBoard", background, lambda i: i)
+edit_board(team_2, "OpponentBoard", background, lambda i: 4-i)
 with open("generated-battle.json", "w") as f:
     json.dump(data, f, indent=2)
