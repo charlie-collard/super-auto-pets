@@ -59,7 +59,7 @@ def edit_board(team, board_name, board_background, index_function):
             data[board_name]["Minions"]["Items"][index]["Perk"] = perks.get(perk)
             data[board_name]["Minions"]["Items"][index]["Attack"]["Permanent"] = attack
             data[board_name]["Minions"]["Items"][index]["Health"]["Permanent"] = health
-            data[board_name]["Minions"]["Items"][index]["Cosmetic"] = hats.get(hat)
+            data[board_name]["Minions"]["Items"][index]["Cosmetic"] = hats.get(hat) or 0
         else:
             data[board_name]["Minions"]["Items"][index] = None
 
