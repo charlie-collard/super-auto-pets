@@ -13,7 +13,7 @@ A tool to allow for viewing of arbitrary Super Auto Pets replays
 1. Open [Super Auto Pets](https://teamwood.itch.io/super-auto-pets) in your browser, start a game, and get to the point where you can watch a replay (the swords in the top right).
 2. Edit `team_1` and `team_2` in `make-team.py` to your desired teams
 3. Run `python3 make-team.py`
-4. Start the proxy with `./start-proxy.sh`
+4. Start the proxy with `./start-proxy.sh` (Windows users can run `start-proxy.ps1`)
 5. Configure your browser to use the proxy
     * Chrome: chrome://settings/?search=proxy
     * [Firefox](https://support.mozilla.org/en-US/kb/connection-settings-firefox)
