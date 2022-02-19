@@ -7,7 +7,7 @@ battle_filename = "generated-battle.json"
 def request(flow: http.HTTPFlow) -> None:
     if not (flow.request.method == "GET"):
         return
-    if match := re.search("https://api.teamwoodgames.com/v15/api/battle/get/([-a-f0-9]*)", flow.request.pretty_url):
+    if match := re.search("https://api.teamwood.games/0.16/api/battle/get/([-a-f0-9]*)", flow.request.pretty_url):
         (battle_id,) = match.groups()
         with open(battle_filename) as f:
             data = json.load(f)
