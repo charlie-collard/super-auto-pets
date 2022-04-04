@@ -12,5 +12,15 @@
   "weak": 10,
   "lucky": 11,
   "steak": 12,
-  "melon": 13
+  "melon": 13,
+  "strawberry": 14,
+  "carrot": 15,
+  "grapes": 16,
+  "popcorn": 17,
+  "pepper": 18,
+  "cucumber": 19,
+  "croissant": 20,
+  "pineapple": 21,
+  "lemon": 22,
+  "cheese": 23
 }

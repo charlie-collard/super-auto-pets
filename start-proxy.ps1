@@ -1,1 +1,1 @@
-mitmproxy --allow-hosts api.teamwood.games -s mitmproxy-plugin.py
+mitmproxy --allow-hosts teamwood.games -s mitmproxy-plugin.py
