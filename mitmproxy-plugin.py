@@ -3,8 +3,6 @@ import json
 from mitmproxy import http
 
 battle_filename = "generated-battle.json"
-api_version = "0.17"
-beta_api_version = "0.18"
 
 
 def request(flow: http.HTTPFlow) -> None:
@@ -26,9 +24,7 @@ def request(flow: http.HTTPFlow) -> None:
 
 def is_valid_battle_url(url) -> str:
     battle_id = ""
-    if match := re.search(f"https://api.teamwood.games/{api_version}/api/battle/get/([-a-f0-9]*)", url):
-        (battle_id,) = match.groups()
-    elif match := re.search(f"https://staging.teamwood.games/{beta_api_version}/api/battle/get/([-a-f0-9]*)", url):
+    if match := re.search(f"/api/battle/get/([-a-f0-9]*)", url):
         (battle_id,) = match.groups()
 
     return battle_id
